@@ -7,11 +7,14 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Jonathan Builes-HW8"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DataPersistence"
         tools:targetApi="31">
+        <activity
+            android:name=".database.SharedPref"
+            android:exported="false" />
         <activity
             android:name=".database.MainActivity2"
             android:exported="false" />

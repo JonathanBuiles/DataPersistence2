@@ -37,7 +37,10 @@ class DatabaseActivity : AppCompatActivity() {
     }
 
     private fun readData() {
+        val allUsers = dbHelper.getAll()
+        allUsers.forEach { Log.d("Data", "${it.firstName}, ${it.lastName}") }
 
+        val intent = Intent(this, MainActivity2::class.java)
         startActivity(
             Intent(this,MainActivity2::class.java)
         )
